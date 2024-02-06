@@ -9,7 +9,7 @@ import logo from '@/resources/logo/web3_together_logo_white_text.png'
 
 export const Navbar = () => {
   const pathname = usePathname()
-  const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState<boolean>(false)
   return (
     <nav className='flex justify-between items-center'>
       <Link href={'/'} className='-ml-5'>

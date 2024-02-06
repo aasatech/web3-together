@@ -3,6 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { MdFacebook } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { Button } from "@/components/Button";
 
 const Page = () => {
   return (
@@ -17,7 +18,7 @@ const Page = () => {
               src="https://s3-alpha-sig.figma.com/img/1b79/2794/632d7a1a13be6cd38c2583a945baffe9?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ix8oZoqdMaHF6FZze5i3t9GV2ErUg4vPUAE6pOhFWBQGXJdDtG7qLxwRL8DCrBibSFcm5mi3qSo8u0-wNC~cLdxLxgTzH9hk26o97rAgUKDs3tSq-40hEW3p2JwlWdeXRxwQSECM-aaEY8GKR1gAVAH32kcHpdmyWEgf-1KsC7pIy1GGmxM1MDQY3jsj8~QxHnh2EzyrLC9W9qWO7R8UdQCLcwj477c9c3dHEOQRQkODcKLIOmigW1B8QuAba1faznP8aDrPYtSERH1a-k26MqtxQtccIwqiVt6Wu3JgR9ELAeacxuzqb--X1~CnQNDyPBmc7ojPA3Uj5Y-3iDgXzQ__"
               className="rounded-full h-32 w-32 md:h-20 md:w-20  mx-auto"
               alt="Web3 Together"
-            ></img>
+            />
             <h1 className="font-inter text-sm md:text-sm lg:text-base font-bold leading-10 tracking-wider mt-5">
               Web3 together
             </h1>
@@ -65,9 +66,7 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-[#F2A93B] px-3 py-3 rounded-lg text-white font-inter font-bold text-base md:text-lg leading-7 tracking-wider mx-auto my-auto mt-5 md:mt-5">
-            Connect Wallet!
-          </button>
+          <Button label="Connect Wallet!"/>
         </div>
       </div>
     </div>
