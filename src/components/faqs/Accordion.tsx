@@ -1,8 +1,15 @@
 'use client'
 import React, { useState } from 'react'
 
-export const Accordion = ({ data }) => {
-    const [isActive, setActive] = useState(null)
+type Props = {
+    data: {
+        question: string;
+        answer: string;
+    }[]
+}
+
+export const Accordion = ({ data }: Props) => {
+    const [isActive, setActive] = useState<number | null>(null)
     return (
         <>
             {data.map((data, index) => (

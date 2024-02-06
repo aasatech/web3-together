@@ -1,7 +1,15 @@
-import { data } from "autoprefixer";
 import React from "react";
 
-export const EventCard = ({ data }) => {
+type Props = {
+  data:{
+    cardimg:string; 
+    title:string; 
+    description:string; 
+    onClick:()=>void;
+  }
+}
+
+export const EventCard = ({ data }: Props) => {
   const { cardimg, title, description, onClick } = data;
 
   return (
@@ -24,7 +32,7 @@ export const EventCard = ({ data }) => {
         </p>
         <button
           onClick={onClick}
-          className="w-[116px] h-[42px] bg-[#F2A93B] rounded-lg ml-[210px] mt-[33px] "
+          className="w-[116px] h-[42px] bg-custom-yellow rounded-lg ml-[210px] mt-[33px]"
         >
           Joint
         </button>

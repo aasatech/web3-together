@@ -2,6 +2,7 @@
 import React from "react";
 import { SmallEvenCard } from "@/components/SmallEvenCard";
 import { useRouter, useSearchParams } from "next/navigation";
+import { Button } from "@/components/Button";
 
 export default function JoinEvent() {
   const searchParams = useSearchParams();
@@ -46,12 +47,7 @@ export default function JoinEvent() {
             </h1>
           </div>
           <div>
-            <button
-              onClick={handleClickBack}
-              className="bg-[#FFFFFF] bg-opacity-20 w-32 h-14 rounded-lg text-[#F2A93B] font-inter font-bold text-base md:text-xl leading-7 tracking-wider self-end"
-            >
-              Back
-            </button>
+            <Button label="Back" className="!bg-white/20 !text-custom-yellow !px-10" onClick={handleClickBack}/>
           </div>
         </div>
 
@@ -66,7 +62,7 @@ export default function JoinEvent() {
             ) : (
               <img
                 className="mb-10 rounded-lg w-full"
-                src="https://s3-alpha-sig.figma.com/img/1bc5/cc4c/c0847ed3e7424e2c02351b7eef36211d?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e4PdcvReLaP5i0QLiSb8s8Dztngsvqi~6yCgs2s5wWaEiCsm-wTT36PjtrPN8RQTZkXt~09OLH0gRRDakM3a9CRWs8ZL~OP3Yf17pI3F0oWltqLDzB~EBkzbkZIt6l4rwuvgP5wiCt983aSGerPPDDasBSG0yIXTRMvpdskubEQGwaRQ-wt3e58X~n-gqJUCIf65pBDBMDG3daY7KtydnMSF19D3zetWQjlJFs3d9yvwgC1pmpIe~ZaTkcROrGd6R7C5l6yoYZOvarE1y3PSLgHjIOGE1CpjXgFXA1Rz~F46kNzEfuIbO3pCN8YgU~laTUSP3dXG1JM4u1xuA0hFYQ__"
+                src="https://s3-alpha-sig.figma.com/img/1bc5/cc4c/c0847ed3e7424e2c02351b7eef36211d?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=e4PdcvReLaP5i0QLiSb8s8Dztngsvqi~6yCgs2s5wWaEiCsm-wTT36PjtrPN8RQTZkXt~09OLH0gRRDakM3a9CRWs8ZL~OP3Yf17pI3F0oWltqLDzB~EBkzbkZIt6l4rwuvgP5wiCt983aSGerPPDDasBSG0yIXTRMvpdskubEQGwaRQ-wt3e58X~n-gqJUCIf65pBDBMDG3daY7KtydnMSF19D3zetWQjlJFs3d9yvwgC1pmpIe~ZaTkcROrGd6R7C5l6yoYZOvarE1y3PSLgHjIOGE1CpjXgFXA1Rz~F46kNzEfuIbO3pCN8YgU~laTUSP3dXG1JM4u1xuA0hFYQ"
                 alt="Event Image"
               />
             )}

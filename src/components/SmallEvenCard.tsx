@@ -4,7 +4,21 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 
-export const SmallEvenCard = ({ data }) => {
+type Props = {
+  data:{
+    img: string; 
+    title:string; 
+    description: string; 
+    date:string; 
+    joinLink: string; 
+    query?:{
+      paragraphs:string;
+      img: string;
+    }
+  }
+}
+
+export const SmallEvenCard = ({ data }: Props) => {
   const searchParams = useSearchParams();
 
   const router = useRouter();
