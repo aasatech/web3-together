@@ -4,7 +4,7 @@ export const Card = () => {
     return (
         <div className='rounded-xl bg-[#D9D9D91A] p-5'>
             <h1 className='font-bold text-xl pb-3'>Suggestion</h1>
-            <p className='font-normal text-white/50'>
+            <p className='text-white/50'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas
             </p>
             <div className='flex items-center gap-5 mt-5'>
