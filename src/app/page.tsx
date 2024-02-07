@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <motion.div className="mt-5 lg:mt-10"
+    <motion.div className="mt-5 lg:mt-10 mb-10"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
