@@ -1,10 +1,7 @@
-'use client'
 import { Card } from '@/components/rewards/Card'
 import React from 'react'
 import image1 from '@/resources/rewards/image1.png'
 import image2 from '@/resources/rewards/image2.png'
-import { m } from 'framer-motion'
-import CustomLazy from '@/components/CustomLazy'
 
 const page = () => {
   const cardData = [{
@@ -29,12 +26,7 @@ const page = () => {
     date: 'Jun, 28, 2024'
   },]
   return (
-    <CustomLazy>
-      <m.div className='my-10'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
+      <div className='my-10'>
         <div className='grid lg:w-4/6 pb-10'>
           <h1 className='font-normal md:text-lg lg:text-xl xl:text-2xl pb-5'>
             NFTs: A New Way to Reward Members
@@ -53,8 +45,7 @@ const page = () => {
             ))
           }
         </div>
-      </m.div>
-    </CustomLazy>
+      </div>
   )
 }
 

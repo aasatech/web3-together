@@ -3,8 +3,6 @@ import React from "react";
 import { SmallEvenCard } from "@/components/SmallEvenCard";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Button } from "@/components/Button";
-import { m } from "framer-motion";
-import CustomLazy from "@/components/CustomLazy";
 import Image from "next/image";
 
 export default function JoinEvent() {
@@ -42,12 +40,7 @@ export default function JoinEvent() {
   ];
 
   return (
-    <CustomLazy>
-      <m.div className="mb-10 md:-mt-16"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
+      <div className="mb-10 md:-mt-16">
         <div className="flex max-lg:flex-col-reverse justify-center items-center relative">
           <h1 className="text-center font-bold text-2xl pb-10 max-w-xl">
             If you hold 1 Web3 Together Membership 
@@ -108,7 +101,6 @@ export default function JoinEvent() {
             </h1>
           </div>
         </div>
-      </m.div>
-    </CustomLazy>
+      </div>
   );
 }

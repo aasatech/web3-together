@@ -1,20 +1,12 @@
-'use client'
 import { Card } from '@/components/membership/Card'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import etoro from '@/resources/membership/etoro.png'
-import { m } from 'framer-motion'
-import CustomLazy from '@/components/CustomLazy'
 
 const page = () => {
   return (
-    <CustomLazy>
-      <m.div className='my-10'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
+      <div className='my-10'>
         <div className='pb-5'>
           <h1 className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl pb-5">
             How to be a Membership?
@@ -39,8 +31,7 @@ const page = () => {
             </Link>
           </div>
         </div>
-      </m.div>
-    </CustomLazy>
+      </div>
   )
 }
 

@@ -1,8 +1,5 @@
-'use client'
 import React from "react";
 import { SmallEvenCard } from "@/components/SmallEvenCard";
-import { m } from "framer-motion";
-import CustomLazy from "@/components/CustomLazy";
 
 const Communities = () => {
   const events = [
@@ -193,12 +190,7 @@ const Communities = () => {
   ];
 
   return (
-    <CustomLazy>
-      <m.div className="w-full"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-      >
+      <div className="w-full">
         <h1 className="text-center font-bold text-3xl">
           Community
         </h1>
@@ -207,8 +199,7 @@ const Communities = () => {
               <SmallEvenCard key={index} data={event} />
             ))}
           </div>
-      </m.div>
-    </CustomLazy>
+      </div>
   );
 };
 

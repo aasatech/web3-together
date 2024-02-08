@@ -1,18 +1,12 @@
-'use client'
 import { Button } from "@/components/Button";
 import { ButtonLearnMore } from "@/components/ButtonLearnMore";
 import { AnimatedBackgroundLogo } from "@/components/home/AnimatedBackgroundLogo";
 import { Card } from "@/components/home/Card";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <motion.div className="mt-5 lg:mt-10 mb-10"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
+    <div className="mt-5 lg:mt-10 mb-10">
       <div className="relative flex justify-between gap-5 max-lg:grid-cols-1">
         <section className="lg:w-3/6">
           <h1 className="font-bold text-lg md:text-2xl lg:text-3xl xl:text-4xl mb-5 duration-200">
@@ -40,6 +34,6 @@ export default function Home() {
           <AnimatedBackgroundLogo />
         </section>
       </div>
-    </motion.div>
+    </div>
   )
 }
