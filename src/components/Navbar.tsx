@@ -16,14 +16,14 @@ export const Navbar = () => {
     pathname === '/mint' || pathname.startsWith('/communities/joins') ? setIsNav(false) : setIsNav(true)
   },[pathname])
   return (
-    <nav className={`flex justify-between items-center`}>
-      <Link href={'/'} className={clsx({ 'md:opacity-0 md:-z-50' : !isNav }, '-ml-5')}>
+    <nav className={clsx({ '-z-50 hidden' : !isNav }, `flex justify-between items-center`)}>
+      <Link href={'/'} className={'-ml-5'}>
         <span>
           <Image priority width={100} height={100} src={logo} alt='logo'/>
         </span>
       </Link>
 
-      <ul className={clsx({ 'opacity-0 -z-50' : !isNav }, 'duration-300 flex items-center lg:text-xl gap-5 lg:gap-10 text-white/50 max-md:hidden font-bold')}>
+      <ul className={'duration-300 flex items-center lg:text-xl gap-5 lg:gap-10 text-white/50 max-md:hidden font-bold'}>
         <li>
           <Link href={'/membership'}
             className={clsx({ 'text-custom-yellow': pathname === '/membership' }, 'hover:text-custom-yellow duration-100')}

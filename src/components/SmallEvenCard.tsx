@@ -2,15 +2,17 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type Props = {
   data: {
+    id: string;
     img: string;
     title: string;
     description: string;
     date: string;
     joinLink: string;
-    query?: {
+    details?: {
       img: string;
       intro: string;
       howToJoin: string,
@@ -22,15 +24,17 @@ type Props = {
 }
 
 export const SmallEvenCard = ({ data }: Props) => {
-
-  const { img, title, description, date, joinLink, query } = data;
-
+  const { img, title, description, date, joinLink, id } = data;
+  const pathName = usePathname()
+  console.log(pathName);
+  
   return (
     <Link
-      href={{
-        pathname: joinLink,
-        query: query,
-      }}>
+      href={pathName === '/communities' ? 
+      { pathname:joinLink, query: {id},} 
+      : 
+      { href:joinLink, query: {id},}
+      }>
       <div className="bg-white/10 rounded-lg">
         <div className="grid">
           <Image

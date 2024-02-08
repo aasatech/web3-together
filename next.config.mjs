@@ -2,12 +2,7 @@
 const nextConfig = {
     images: {
         remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 's3-alpha-sig.figma.com',
-                port: '',
-                pathname: '/**',
-            },
+            { hostname: 's3-alpha-sig.figma.com', },
         ],
     },
 };

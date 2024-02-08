@@ -14,7 +14,7 @@ const Page = () => {
 
   return (
     <div className="mb-10">
-      <m.div className="text-center flex justify-center items-center -mt-14 max-md:hidden"
+      <m.div className="text-center flex justify-center items-center max-md:hidden"
         initial={{ x: '-50%', y: -44, opacity: 1, translateX: 159 }}
         animate={{ x: 0, y: 0, opacity: 1, translateX: 0 }}
         transition={{ duration: 1 }}
@@ -31,7 +31,15 @@ const Page = () => {
         </Link>
       </m.div>
 
-      <div className="grid max-w-4xl gap-8 mx-auto bg-white/10 p-10 rounded-3xl">
+      <div className="flex items-center flex-col md:hidden">
+        <Link href={'/'}>
+          <Image priority width={100} height={100} src={logo} alt='logo' className="mx-auto"/>
+          <h1 className="whitespace-nowrap text-2xl md:text-4xl font-bold mx-auto">
+            Web3 <span className="text-custom-yellow">Together</span>
+          </h1>
+        </Link>
+      </div>
+      <div className="grid max-w-4xl gap-8 mx-auto bg-white/10 p-10 rounded-3xl mt-5">
         <div className="grid sm:grid-cols-[30%_1fr] gap-8">
           <div className="text-center">
             <Image
