@@ -1,0 +1,131 @@
+{
+    "Navbar": {
+        "membership": "Membership",
+        "rewards": "Rewards",
+        "community": "Community",
+        "faqs": "FAQs",
+        "mint": "Mint is live"
+    },
+    "Home": {
+        "title": {
+            "one": "We are a small",
+            "two": "community that helps",
+            "three": "people to learn about",
+            "four": "Web3 development."
+        },
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum",
+        "buttons": {
+            "exploreNow": "Explore Now",
+            "learnMore": "Learn More"
+        }
+    },
+    "Membership": {
+        "title": "How to be a Membership?",
+        "description": "When you buy a Web3 Together NFT Membership Pass, you’re not simply buying an NFT. You will gain membership access to a Web3 Together Membership Pass: Genesis Edition whose benefits and offerings will increase over time. Web3 Together pass supply will be limited to 3333.",
+        "card": {
+            "title": "Suggestion",
+            "description": "When you buy a Web3 Together NFT Membership Pass, you’re not simply buying an NFT. You will gain membership access to a Web3 Together Membership Pass: Genesis Edition whose benefits and offerings will increase over time. Web3 Together pass supply will be limited to 3333.",
+            "reward": {
+                "label": "Rewards",
+                "value": "75 XP"
+            },
+            "deadline": {
+                "label": "Deadline",
+                "value": "None"
+            }
+        }
+    },
+    "Rewards": {
+        "title": {
+            "main": "Use NFT Rewards to Power Loyalty",
+            "sub": "NFTs: A New Way to Reward Members"
+        },
+        "description": "NFTs are quickly emerging as a new form of rewards for loyalty members. Brands are reaching new customers, building a new wave of excitement, and creating new communities of super fans. Now, you can offer NFT rewards at nearly every touchpoint. With Annex Cloud, you can add NFT rewards – with or without gamification – and create an entirely new kind of experience for your members.",
+        "cards": {
+            "button": "Join",
+            "one": {
+                "title": "Out Talking Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project launched by 99xclub team. Minimum 12 NFT projects will be launched by 99xclub team in span of 3 years."
+            },
+            "two": {
+                "title": "Out Talking Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project launched by 99xclub team. Minimum 12 NFT projects will be launched by 99xclub team in span of 3 years."
+            },
+            "three": {
+                "title": "Out Talking Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project launched by 99xclub team. Minimum 12 NFT projects will be launched by 99xclub team in span of 3 years."
+            },
+            "four": {
+                "title": "Out Talking Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project launched by 99xclub team. Minimum 12 NFT projects will be launched by 99xclub team in span of 3 years."
+            }
+        }
+    },
+    "communities": {
+        "title": "Community",
+        "cards": {
+            "button":"Join Now",
+            "0": {
+                "title": "TTN Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project",
+                "date": "27 March 2023",
+                "details": {
+                    "intro": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took",
+                    "howToJoin": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat quaerat fugiat? Laborum soluta molestias voluptates odio modi, iure, officiis obcaecati officia ipsam doloremque earum doloribus quasi quis nesciunt animi.",
+                    "timeLines": [
+                        "27 March 2023: Open application",
+                        "02 May 2023: Deadline of the 300-word proposal submission",
+                        "13 June 2023: Submission of first paper draft",
+                        "13 July 2023: Final papers",
+                        "September 2023: Publication"
+                    ],
+                    "noted": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
+                }
+            },
+            "1": {
+                "title": "TTN Event",
+                "description": "If you hold 1 Web3 Together Membership Pass = 1 Free NFT in Each NFT Project",
+                "date": "27 March 2023",
+                "details": {
+                    "intro": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took",
+                    "howToJoin": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repellat quaerat fugiat? Laborum soluta molestias voluptates odio modi, iure, officiis obcaecati officia ipsam doloremque earum doloribus quasi quis nesciunt animi.",
+                    "timeLines": [
+                        "27 March 2023: Open application",
+                        "02 May 2023: Deadline of the 300-word proposal submission",
+                        "13 June 2023: Submission of first paper draft",
+                        "13 July 2023: Final papers",
+                        "September 2023: Publication"
+                    ],
+                    "noted": "simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took"
+                }
+            },
+            "2": {}
+        }
+    },
+    "FAQs": {
+        "one": {
+            "question": "How to mint 99x Club NFT Pass?",
+            "answer": "There will be 3333 99x Club NFT Passes available. Whitelist Mint Price will be 0.1 ETH per pass. Whitelist Mint Date : 20 Feb-23 13:30 UTC. Mint Link will be updated on httos://99x.club"
+        },
+        "two": {
+            "question": "How to mint 99x Club NFT Pass?",
+            "answer": "There will be 3333 99x Club NFT Passes available. Whitelist Mint Price will be 0.1 ETH per pass. Whitelist Mint Date : 20 Feb-23 13:30 UTC. Mint Link will be updated on httos://99x.club"
+        },
+        "three": {
+            "question": "How to mint 99x Club NFT Pass?",
+            "answer": "There will be 3333 99x Club NFT Passes available. Whitelist Mint Price will be 0.1 ETH per pass. Whitelist Mint Date : 20 Feb-23 13:30 UTC. Mint Link will be updated on httos://99x.club"
+        }
+    },
+    "Mint": {
+        "title": {
+            "one": "Mint Your Web3 Together Digital",
+            "two": "Membership Pass : Founders Edition!"
+        },
+        "description": {
+            "one": "A private group of 3333 dedicated NFT collectors and artists. Membership to the collective and all of the benefits come from holding the Web3 Together Membership Pass.",
+            "two": "A private group of 3333 dedicated NFT collectors and artists. Membership to the collective and all of the benefits come from holding the Web3 Together Membership Pass.",
+            "three": "A private group of 3333 dedicated NFT collectors and artists. Membership to the collective and all of the benefits come from holding the Web3 Together Membership Pass."
+        },
+        "button": "Connect Wallet!"
+    }
+}

@@ -1,60 +1,60 @@
 'use client'
-import Link from 'next/link'
+import { Link, usePathname } from '../navigation'
 import React, { useEffect, useState } from 'react'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { Button } from './Button'
 import clsx from 'clsx';
 import logo from '@/resources/logo/web3_together_logo_white_text.png'
+import { useTranslations } from 'next-intl';
 
 export const Navbar = () => {
+  const t = useTranslations('Navbar')
   const pathname = usePathname()
   const [toggleMenu, setToggleMenu] = useState<boolean>(false)
   const [isNav, setIsNav] = useState(true)
 
-  useEffect(()=>{
+  useEffect(() => {
     pathname === '/mint' || pathname.startsWith('/communities/joins') ? setIsNav(false) : setIsNav(true)
-  },[pathname])
+  }, [pathname])
   return (
-    <nav className={clsx({ '-z-50 hidden' : !isNav }, `flex justify-between items-center`)}>
+    <nav className={clsx({ '-z-50 hidden': !isNav }, `flex justify-between items-center`)}>
       <Link href={'/'} className={'-ml-5'}>
         <span>
-          <Image priority width={100} height={100} src={logo} alt='logo'/>
+          <Image priority width={100} height={100} src={logo} alt='logo' />
         </span>
       </Link>
-
       <ul className={'duration-300 flex items-center lg:text-xl gap-5 lg:gap-10 text-white/50 max-md:hidden font-bold'}>
         <li>
           <Link href={'/membership'}
             className={clsx({ 'text-custom-yellow': pathname === '/membership' }, 'hover:text-custom-yellow duration-100')}
           >
-            Membership
+            {t('membership')}
           </Link>
         </li>
         <li>
           <Link href={'/rewards'}
             className={clsx({ 'text-custom-yellow': pathname === '/rewards' }, 'hover:text-custom-yellow duration-100')}
           >
-            Rewards
+            {t('rewards')}
           </Link>
         </li>
         <li>
           <Link href={'/communities'}
             className={clsx({ 'text-custom-yellow': pathname === '/communities' }, 'hover:text-custom-yellow duration-100')}
           >
-            Community
+            {t('community')}
           </Link>
         </li>
         <li>
           <Link href={'/faqs'}
             className={clsx({ 'text-custom-yellow': pathname === '/faqs' }, 'hover:text-custom-yellow duration-100')}
           >
-            FAQs
+            {t('faqs')}
           </Link>
         </li>
         <li>
           <Link onClick={() => setToggleMenu(false)} href={'/mint'}>
-            <Button label='Mint is live' className='lg:!px-7 lg:!py-5 text-white hover:bg-custom-yellow/80 duration-100' />
+            <Button label={t('mint')} className='lg:!px-7 lg:!py-5 text-white hover:bg-custom-yellow/80 duration-100' />
           </Link>
         </li>
       </ul>
@@ -69,7 +69,7 @@ export const Navbar = () => {
               className={clsx({ 'text-custom-yellow': pathname === '/membership' })}
               onClick={() => setToggleMenu(false)}
             >
-              Membership
+              {t('membership')}
             </Link>
           </li>
           <li>
@@ -77,7 +77,7 @@ export const Navbar = () => {
               className={clsx({ 'text-custom-yellow': pathname === '/rewards' })}
               onClick={() => setToggleMenu(false)}
             >
-              Rewards
+              {t('rewards')}
             </Link>
           </li>
           <li>
@@ -85,7 +85,7 @@ export const Navbar = () => {
               className={clsx({ 'text-custom-yellow': pathname === '/communities' })}
               onClick={() => setToggleMenu(false)}
             >
-              Community
+              {t('community')}
             </Link>
           </li>
           <li>
@@ -93,12 +93,12 @@ export const Navbar = () => {
               className={clsx({ 'text-custom-yellow': pathname === '/faqs' })}
               onClick={() => setToggleMenu(false)}
             >
-              FAQs
+              {t('faqs')}
             </Link>
           </li>
           <li>
             <Link onClick={() => setToggleMenu(false)} href='/mint'>
-              <Button label='Mint is live' className='px-7 py-5 text-white' />
+              <Button label={t('mint')} className='px-7 py-5 text-white' />
             </Link>
           </li>
         </ul>

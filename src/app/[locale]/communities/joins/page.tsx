@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
-import { SmallEvenCard } from "@/components/SmallEvenCard";
-import { useRouter, useSearchParams } from "next/navigation";
-import { Button } from "@/components/Button";
-import Image from "next/image";
-import EventsData from '@/data/events.json'
-import shuffle from "@/utils/shuffle";
+import React from "react"
+import { SmallEvenCard } from "@/components/SmallEvenCard"
+import { useSearchParams } from "next/navigation"
+import {useRouter} from '@/navigation'
+import { Button } from "@/components/Button"
+import Image from "next/image"
+import EventsData from "@/data/events.json"
+import shuffle from "@/utils/shuffle"
 
 export default function JoinEvent() {
   const searchParams = useSearchParams();
@@ -17,7 +18,6 @@ export default function JoinEvent() {
 
   const otherEvents = EventsData.filter(event=>event.id !== id)
   const randomEvents = shuffle(otherEvents).slice(0,2)
-  console.log(randomEvents);
 
   const handleClickBack = () => {
     router.push("/communities");

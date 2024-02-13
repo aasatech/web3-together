@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+import {Link, usePathname} from "../navigation";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 type Props = {
   data: {
@@ -24,10 +24,10 @@ type Props = {
 }
 
 export const SmallEvenCard = ({ data }: Props) => {
-  const { img, title, description, date, joinLink, id } = data;
+  const { img, date, joinLink, id , title, description} = data;
   const pathName = usePathname()
-  console.log(pathName);
-  
+  const t = useTranslations('communities')
+
   return (
     <Link
       href={pathName === '/communities' ? 
@@ -58,7 +58,7 @@ export const SmallEvenCard = ({ data }: Props) => {
               <button
                 className="text-custom-yellow font-bold"
               >
-                Join Now
+                {t('cards.button')}
               </button>
             </div>
           </div>

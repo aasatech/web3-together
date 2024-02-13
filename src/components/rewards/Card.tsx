@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { Button } from '../Button'
+import { useTranslations } from 'next-intl'
 
 type Props = {
     data: {
@@ -12,6 +13,7 @@ type Props = {
 }
 
 export const Card = ({ data }: Props) => {
+    const t=useTranslations('Rewards')
     return (
         <div className='rounded-lg p-5 bg-[#D9D9D91A] grid gap-5'>
             <div className='grid sm:grid-cols-[30%_1fr] gap-5'>
@@ -27,7 +29,7 @@ export const Card = ({ data }: Props) => {
             </div>
             <div className='flex items-center justify-between'>
                 <span>{data.date}</span>
-                <Button label='Join' />
+                <Button label={t('cards.button')} />
             </div>
         </div>
     )

@@ -7,10 +7,12 @@ import { FaGithub } from "react-icons/fa";
 import { Button } from "@/components/Button";
 import { m } from "framer-motion";
 import Image from "next/image";
-import logo from '@/resources/logo/web3_together_logo_white_text.png'
+import logo from "@/resources/logo/web3_together_logo_white_text.png"
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
-const Page = () => {
+const Mint = () => {
+  const t = useTranslations('Mint')
 
   return (
     <div className="mb-10">
@@ -79,36 +81,29 @@ const Page = () => {
               </Link>
             </div>
           </div>
-          <div className="">
+          <div>
             <h1 className="text-lg lg:text-xl xl:text-2xl font-bold duration-300">
-              Mint Your Web3 Together Digital <br /> Membership Pass : Founders
-              Edition!
+             {t('title.one')} <br /> {t('title.two')}
             </h1>
             <div className="mt-5 md:mt-8 text-white/50">
-              <p className="">
-                A private group of 3333 dedicated NFT collectors and artists.
-                Membership to the collective and all of the benefits come from
-                holding the Web3 Together Membership Pass.
+              <p>
+                {t('description.one')}
                 <br />
                 <br />
-                A private group of 3333 dedicated NFT collectors and artists.
-                Membership to the collective and all of the benefits come from
-                holding the Web3 Together Membership Pass.
+                {t('description.two')}
                 <br />
                 <br />
-                A private group of 3333 dedicated NFT collectors and artists.
-                Membership to the collective and all of the benefits come from
-                holding the Web3 Together Membership Pass.
+                {t('description.three')}
               </p>
             </div>
           </div>
         </div>
         <div className="mx-auto">
-          <Button label="Connect Wallet!" onClick={() => alert('No wallet!')} />
+          <Button label={t('button')} onClick={() => alert('No wallet!')} />
         </div>
       </div>
     </div>
   );
 };
 
-export default Page;
+export default Mint;

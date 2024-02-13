@@ -3,18 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import etoro from '@/resources/membership/etoro.png'
+import {useTranslations} from 'next-intl';
 
-const page = () => {
+const Membership = () => {
+  const t = useTranslations('Membership')
   return (
       <div className='my-10'>
         <div className='pb-5'>
           <h1 className="font-bold text-xl md:text-2xl lg:text-3xl xl:text-4xl pb-5">
-            How to be a Membership?
+          {t('title')}
           </h1>
           <p className="xl:text-2xl pb-5">
-            When you buy a
-            <span className='font-bold'> Web3 Together NFT Membership Pass, </span>
-            you’re not simply buying an NFT. You will gain membership access to a Web3 Together Membership Pass: Genesis Edition whose benefits and offerings will increase over time.<span className='font-bold'> Web3 Together pass supply</span> will be limited to 3333.
+            {t('description')}
           </p>
           <p className='xl:text-2xl'>Link here:{' '}
             <Link href={'#'} className='underline underline-offset-2 xl:text-2xl'>
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Membership

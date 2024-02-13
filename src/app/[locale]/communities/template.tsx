@@ -1,6 +1,6 @@
-'use client'
-import { m, LazyMotion, domAnimation } from 'framer-motion'
-import React from 'react'
+"use client"
+import { m, LazyMotion, domAnimation } from "framer-motion"
+import React from "react"
 
 type Props = {
     children: React.ReactNode;
