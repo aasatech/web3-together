@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,10 @@ export default function RootLayout({ children, }: Readonly<{
       <body suppressHydrationWarning={true}
         className={`${inter.className} !overflow-x-hidden`}>
         <div className="w-full md:w-10/12 mx-auto px-5 md:px-0">
+          <NextTopLoader 
+            color="#F2A93B"
+            showSpinner={false}
+          />
           <Navbar />
           {children}
         </div>
